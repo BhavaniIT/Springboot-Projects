@@ -60,6 +60,14 @@ class ProductServiceApplicationTests {
 				.price(BigDecimal.valueOf(1200))
 				.build();
 	}
+
+	@Test
+	void getProduct() throws Exception {
+		mockMvc.perform(MockMvcRequestBuilders.get("/api/product")
+		).andExpect(status().isOk());
+	}
+
+
 }
 
 
