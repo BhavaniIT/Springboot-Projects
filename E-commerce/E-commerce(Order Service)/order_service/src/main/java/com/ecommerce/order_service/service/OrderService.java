@@ -5,6 +5,7 @@ import com.ecommerce.order_service.dto.OrderRequest;
 import com.ecommerce.order_service.model.Order;
 import com.ecommerce.order_service.model.OrderLineItems;
 import com.ecommerce.order_service.repository.OrderRepository;
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import java.util.UUID;
 @Slf4j
 @Service
 @AllArgsConstructor
+@Transactional
 public class OrderService {
 
     private final OrderRepository orderRepository;

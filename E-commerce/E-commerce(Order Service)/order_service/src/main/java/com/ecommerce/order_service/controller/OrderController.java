@@ -4,7 +4,7 @@ import com.ecommerce.order_service.service.OrderService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import com.ecommerce.order_service.dto.OrderRequest
+import com.ecommerce.order_service.dto.OrderRequest;
 
 @RestController
 @AllArgsConstructor
